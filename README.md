@@ -14,9 +14,9 @@ cd ~
 
 ## Run the script
 ```
-bash -c "$(wget -O -https://raw.githubusercontent.com/zzzpotato/Snowgem-Masternode-Lite/master/setup.sh)"
+bash -c "$(wget -O - https://raw.githubusercontent.com/zzzpotato/Snowgem-Masternode-Lite/master/setup.sh)"
 ```
 
 ## Thanks
 
-If you need assistance or find an issue within the script, contact me on discord at potato#4515 and I will try to help you resolve it. You can thank me by mining on my SnowGem pool at https://snowgem.voidr.net/
+If you need assistance or find an issue within the script, contact me on discord at potato#4515 and I will try to help you resolve it. Consider checking out my SnowGem pool at https://snowgem.voidr.net/
