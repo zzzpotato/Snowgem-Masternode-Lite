@@ -32,7 +32,7 @@ unzip blockchain_index.zip -d ~/.snowgem
 
 ### Fetch Daemon
 wget --no-check-certificate --content-disposition https://github.com/Snowgem/Snowgem/releases/download/3000450-20181208/snowgem-linux-3000450-20181208.zip
-unzip snowgem-linux-2000458-20181006.zip
+unzip snowgem-linux-3000450-20181208.zip
 
 ### Setup Swap
 sudo fallocate -l 4G /swapfile
