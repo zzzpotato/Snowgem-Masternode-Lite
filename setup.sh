@@ -1,5 +1,12 @@
 #!/bin/bash
 
+### Check user
+if [ "$EUID" -eq 0 ]
+  then
+        echo -e "Warning: You should not run this as root! Create a new user with sudo permissions!\nThis can be done with (replace username with an actual username such as node):\nadduser username\nusermod -aG sudo username\nsu username\ncd ~\n\nYou will be in a new home directory. Make sure you redownload the script or move it from your /root directory!"
+        exit
+fi
+
 ###Begin
 clear
 read -n1 -r -p "The official guide can be found at https://www.youtube.com/watch?v=yjD3nXmmerU which contains a video of the following steps... Press any key to continue...";echo
@@ -14,13 +21,6 @@ read -n1 -r -p "Let's begin setting up the VPS... Press any key to continue...";
 ### Pre
 sudo apt-get update
 sudo apt-get -y install build-essential pkg-config libc6-dev m4 g++-multilib autoconf libtool ncurses-dev unzip git python python-zmq zlib1g-dev wget bsdmainutils automake curl
-
-### Check user
-if [ "$EUID" -eq 0 ]
-  then
-        echo -e "Warning: You should not run this as root! Create a new user with sudo permissions!\nThis can be done with (replace username with an actual username such as node):\nadduser username\nusermod -aG sudo username\nsu username\ncd ~\n\nYou will be in a new home directory. Make sure you redownload the script or move it from your /root directory!"
-        exit
-fi
 
 ### Fetch Params
 bash -c "$(wget -O - https://raw.githubusercontent.com/Snowgem/Snowgem/master/zcutil/fetch-params.sh)"
