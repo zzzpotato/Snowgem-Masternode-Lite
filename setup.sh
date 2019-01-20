@@ -25,11 +25,6 @@ sudo apt-get -y install build-essential pkg-config libc6-dev m4 g++-multilib aut
 ### Fetch Params
 bash -c "$(wget -O - https://raw.githubusercontent.com/Snowgem/Snowgem/master/zcutil/fetch-params.sh)"
 
-### Fetch Chain
-wget https://cdn1.snowgem.org/blockchain_index.zip
-mkdir ~/.snowgem
-unzip blockchain_index.zip -d ~/.snowgem
-
 ### Fetch Daemon
 wget --no-check-certificate --content-disposition https://github.com/Snowgem/Snowgem/releases/download/3000450-20181208/snowgem-linux-3000450-20181208.zip
 unzip snowgem-linux-3000450-20181208.zip
