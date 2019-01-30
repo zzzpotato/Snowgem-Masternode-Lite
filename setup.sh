@@ -26,8 +26,8 @@ sudo apt-get -y install build-essential pkg-config libc6-dev m4 g++-multilib aut
 bash -c "$(wget -O - https://raw.githubusercontent.com/Snowgem/Snowgem/master/zcutil/fetch-params.sh)"
 
 ### Fetch Daemon
-wget --no-check-certificate --content-disposition https://github.com/Snowgem/Snowgem/releases/download/3000450-20181208/snowgem-linux-3000450-20181208.zip
-unzip snowgem-linux-3000450-20181208.zip
+wget --no-check-certificate --content-disposition https://github.com/Snowgem/Snowgem/releases/download/3000451-20190128/snowgem-linux-3000451-20190128.zip
+unzip snowgem-linux-3000451-20190128.zip
 
 ### Setup Swap
 sudo fallocate -l 4G /swapfile
