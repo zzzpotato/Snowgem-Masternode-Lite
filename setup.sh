@@ -26,8 +26,8 @@ sudo apt-get -y install build-essential pkg-config libc6-dev m4 g++-multilib aut
 bash -c "$(wget -O - https://raw.githubusercontent.com/Snowgem/Snowgem/master/zcutil/fetch-params.sh)"
 
 ### Fetch Daemon
-wget --no-check-certificate --content-disposition https://github.com/Snowgem/Snowgem/releases/download/3000451-20190128/snowgem-linux-3000451-20190128.zip
-unzip snowgem-linux-3000451-20190128.zip
+wget --no-check-certificate --content-disposition https://github.com/Snowgem/Snowgem/releases/download/3000452-20190520/snowgem-ubuntu16.04-3000452-20190520.zip
+unzip snowgem-ubuntu16.04-3000452-20190520.zip
 
 ### Fetch Chain
 wget -N https://github.com/Snowgem/Data/releases/download/0.0.1/blockchain_snowgem_index.zip.sf-part1 -O ~/bc.sf-part1
